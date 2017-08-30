@@ -1,0 +1,46 @@
+	<div id="complete-dialog" class="modal">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title">{{selectedShow?.name}}</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-5 column-center">
+							<img src="{{selectedShow?.image.medium}}" alt="{{selectedShow?.name}}" 
+								 title="{{selectedShow?.name}}" />
+							<div>
+								<app-rating [stars]="selectedShow?.rating?.average / 2"></app-rating>
+							</div>
+						</div>
+						<div class="col-md-7 column-center">
+							<div [innerHTML]="selectedShow?.summary"></div>
+							<div>
+								<div class="genres-show">
+									<span>Genres: </span>
+									<span class="label label-inverse space-between-genres" *ngFor="let genre of selectedShow?.genres">
+										{{genre}}
+									</span>
+								</div>
+								<div class="language-show">Language: <i>{{selectedShow?.language}}</i></div>
+								<div class="schedule-show">
+									At: <i >
+											<span class="badge badge-primary">{{selectedShow?.schedule.time}}</span>
+										</i>
+									On: <i *ngFor="let day of selectedShow?.schedule.days">
+											<span class="label label-inverse">{{day}}</span>
+										</i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br><br>
+				</div>
+				<div class="modal-footer close-modal-content">
+					<button type="button" class="btn btn-inverse close-modal-button" 
+							data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>

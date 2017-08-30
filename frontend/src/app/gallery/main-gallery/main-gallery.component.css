@@ -1,0 +1,28 @@
+.pagination-block {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.pagination-block /deep/ .ngx-pagination .current {
+    background: #3f51b5;
+  }
+
+.pagination-block /deep/ .ngx-pagination .pagination-next,
+.pagination-block /deep/ .ngx-pagination .pagination-previous {
+    background: #3f51b5;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    padding: 7px;
+  }
+
+  .pagination-block /deep/ .ngx-pagination a, {
+    text-decoration: none;
+  }
+
+  .pagination-block /deep/ .ngx-pagination:hover .pagination-next a,
+  .pagination-block /deep/ .ngx-pagination:hover .pagination-previous a {
+    background: #3f51b5;
+  }
+
+  .pagination-block /deep/ .ngx-pagination .disabled {
+      padding: 9px;
+  }

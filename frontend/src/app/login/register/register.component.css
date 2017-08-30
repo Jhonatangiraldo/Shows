@@ -1,0 +1,18 @@
+.header {
+    padding-bottom: 18px;
+    padding-top: 18px;
+}
+
+.form-custom, .login-button {
+    margin-top: 25px;
+}
+
+.password-verify {
+    border-bottom: 2px solid #d81616;
+    background: none;
+    border: 2px solid #d81616;
+}
+
+.enter-same-password {
+    color: #d81616;
+}

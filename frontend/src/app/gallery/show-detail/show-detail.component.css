@@ -1,0 +1,21 @@
+.column-center {
+    text-align: center;
+}
+
+.genres-show, .language-show, .schedule-show {
+    margin-top: 20px;
+}
+
+.close-modal-content {
+    text-align: center;
+    margin-top: -20px;
+    padding-bottom: 30px;
+}
+
+.close-modal-button {
+    box-shadow: 0px 2px 5px 0px;
+}
+
+.space-between-genres {
+    margin-left: 5px;
+}

@@ -1,0 +1,22 @@
+.content-login {
+    padding-bottom: 25px;
+}
+
+.header {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.form-custom {
+    margin-top: 50px;
+}
+
+.login-button {
+    margin-top: 25px;
+}
+
+.bad-login {
+    color: #d81616;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}

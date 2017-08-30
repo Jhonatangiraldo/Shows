@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+.content-login {
+    width: 400px;
+    text-align: center;
+    margin: 8% auto;
+    padding-bottom: 15px;
+}
+
+
+.label-information {
+    margin-top: 10px;
+    color: #3f51b5;
+}
