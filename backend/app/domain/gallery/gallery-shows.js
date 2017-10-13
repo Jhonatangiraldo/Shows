@@ -1,6 +1,6 @@
 const got = require('got');
 
-const showsUrl = 'http://api.tvmaze.com/showsi';
+const showsUrl = 'http://api.tvmaze.com/shows';
 const gotJsonFormat = { json: true };
 
 function getShows(req, res) {
