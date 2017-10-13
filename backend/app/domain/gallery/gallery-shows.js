@@ -1,20 +1,15 @@
-var http = require('http');
+const got = require('got');
 
-const showsUrl = 'http://api.tvmaze.com/shows';
+const showsUrl = 'http://api.tvmaze.com/showsi';
+const gotJsonFormat = { json: true };
 
-function getShows(request, response) {
-    http.get(showsUrl, getData.bind({ 'responseGallery': response }));
+function getShows(req, res) {
+    got( showsUrl, gotJsonFormat ).then( response => {
+        res.json(response.body);
+    }).catch(error => {
+        console.log(error.response.body);
+        res.json(error.response.body);
+    });
 };
-
-function getData(responseServiceConsumed) {
-    let responseGallery = this.responseGallery;
-    let streamData = "";
-    responseServiceConsumed.on('data', function (chunk) {
-        streamData += chunk;
-    });
-    responseServiceConsumed.on('end', function () {
-        responseGallery.json(JSON.parse(streamData));
-    });
-}
 
 module.exports = getShows;

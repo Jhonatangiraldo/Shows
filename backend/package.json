@@ -9,8 +9,10 @@
     "body-parser": "^1.17.2",
     "cors": "^2.8.4",
     "express": "^4.15.4",
+    "got": "^7.1.0",
     "jsonwebtoken": "^7.4.3",
     "mongoose": "^4.11.9",
-    "morgan": "^1.8.2"
+    "morgan": "^1.8.2",
+    "node-fetch": "^1.7.3"
   }
 }
