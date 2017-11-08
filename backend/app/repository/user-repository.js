@@ -5,7 +5,7 @@ module.exports.createUser = function(newUser, callback, response){
 }
 
 module.exports.findByUserAndPass = function(user, callback, response){
-	return User.findOne({ "username": user.username }, 
+	return User.findOne({ "username": user.username },
 						callback.bind({'response':response, 'user':user}));
 }
 

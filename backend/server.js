@@ -23,6 +23,7 @@ app.post('/authenticate', loginController.login);
 app.get('/logged', loginController.logged);
 app.post('/user', userController.createUser);
 app.get('/gallery', galleryController.getShows);
+app.get('/likeShow', galleryController.likeShow);
 
 var port = process.env.PORT || 8080;
 app.listen(port);

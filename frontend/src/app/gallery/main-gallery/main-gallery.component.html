@@ -1,6 +1,6 @@
 <app-search (update)="updatePipe($event)"></app-search>
 <app-show-detail [selectedShow]="selectedShow"></app-show-detail>
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" 
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"
     *ngFor="let show of shows | name:nameShow | rating:rating |
     paginate: { itemsPerPage: 12, currentPage: page } as result">
     <app-show [show]="show" (update)="detailShow($event)"></app-show>

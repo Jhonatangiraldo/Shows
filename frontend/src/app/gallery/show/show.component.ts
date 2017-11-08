@@ -21,4 +21,8 @@ export class ShowComponent implements OnInit {
     this.update.emit(this.show);
   }
 
+  private like(show: any) {
+    console.log(show);
+  }
+
 }

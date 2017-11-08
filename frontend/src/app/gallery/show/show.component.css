@@ -9,3 +9,8 @@
 .app-rating-custom {
     margin-top: 20px;
 }
+
+.like-button {
+    color: white!important;
+    background: #3f51b5!important;
+}

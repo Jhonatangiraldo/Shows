@@ -11,8 +11,11 @@
 		<div class="app-rating-custom">
 			<app-rating [stars]="show?.rating?.average / 2"></app-rating>
 		</div>
-		<button type="button" class="btn btn-default btn-raised" 
+		<button type="button" class="btn btn-default btn-raised"
 				data-toggle="modal" data-target="#complete-dialog"
-				(click)="detail()">Detalle</button>
+				(click)="detail()">Detail</button>
+		<button type="button" class="btn btn-default btn-raised like-button"
+				data-toggle="modal"
+				(click)="like(show)">Like</button>
 	</div>
 </div>

@@ -18,5 +18,14 @@ export class ShowsService {
     return this.http.get(SHOWSURL);
   }
 
+  /**
+   * click on like button
+   */
+  likeShow(show): Observable<any> {
+    let headers = new Headers;
+    headers.append('token', localStorage.getItem('token'));
+    return this.http.get(SHOWSURL);
+  }
+
 }
 
